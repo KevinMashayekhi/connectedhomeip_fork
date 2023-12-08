@@ -527,6 +527,10 @@ class MatterBaseTest(base_test.BaseTestClass):
     def dut_node_id(self) -> int:
         return self.matter_test_config.dut_node_ids[0]
 
+    @property
+    def all_dut_node_ids(self) -> list:
+        return self.matter_test_config.dut_node_ids
+
     def setup_class(self):
         super().setup_class()
 
